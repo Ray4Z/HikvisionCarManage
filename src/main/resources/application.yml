@@ -1,0 +1,19 @@
+server:
+  port: 11080
+  servlet:
+    context-path: /HikvisionManage
+  tomcat:
+    uri-encoding: UTF-8
+
+
+
+communications:
+  mode: 0 #读取摄像头信息方式0接口请求
+vidicon:
+  url: /comDevManageC/getDeviceInformation #获取设备信息的接口
+
+ledscreen:
+  url: /ledScreenManage/getDeviceInformation #获取led设备信息的接口
+#日志配置
+logging:
+  config: classpath:logback-boot.xml
